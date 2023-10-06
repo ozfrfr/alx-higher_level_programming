@@ -22,7 +22,6 @@ a = 10
 b = 5
 result = div(a, b)
 formatted_string = "{} / {} = {}".format(a, b, result)
-print(formatted_string)
 
 if __name__ == "__main__":
     pass
