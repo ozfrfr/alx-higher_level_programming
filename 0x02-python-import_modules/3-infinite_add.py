@@ -11,3 +11,6 @@ for arg in sys.argv[1:]:
 
 # Print the sum of all arguments
 print(sum_of_arguments)
+
+if __name__ == "__main__":
+    pass
