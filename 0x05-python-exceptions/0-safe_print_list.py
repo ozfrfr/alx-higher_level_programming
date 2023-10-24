@@ -2,7 +2,7 @@
 
 def safe_print_list(my_list=[], x=0):
     printed = 0  # Variable to keep track of the number of elements printed
-    
+
     try:
         for i, item in enumerate(my_list):
             if i < x:  # Print only if the index is less than x
