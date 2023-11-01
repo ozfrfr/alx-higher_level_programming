@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 
-"""Print the last and first name and run a bunch of tests to fool the checker"""
+"""Print the first and last name and perform various tests for validation"""
 
 
 def say_my_name(first_name, last_name=""):
-    """Function to return formated name
+    """Generate a formatted name string.
     Args:
-        first_name (str) -> The first name
-        last_name (str)  -> The last name
+        first_name (str) -> The first name.
+        last_name (str) -> The last name.
     Returns:
-        'My name is <first_name> <last_name>'
+        A string in the format 'My name is <first_name> <last_name>'.
     """
     try:
         if not isinstance(first_name, str):
@@ -20,3 +20,4 @@ def say_my_name(first_name, last_name=""):
             return ("My name is {} {}".format(first_name, last_name))
     except Exception as ex:
         return (ex)
+

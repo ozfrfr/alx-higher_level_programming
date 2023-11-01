@@ -1,12 +1,22 @@
 #!/usr/bin/python3
+
+"""Print a square of '#' characters.
+
+This function prints a square made up of '#' characters with a specified size.
+
+Args:
+    size (int/float): The number of '#' characters to print.
+                      Must be an integer or a non-negative float.
+
+Returns:
+    None: The function doesn't return a value, but it prints the square.
+    Exception: If an exception occurs, the raised exception is returned.
+
+Raises:
+    TypeError: If size is not an integer.
+    ValueError: If size is negative or a negative float.
+"""
 def print_square(size):
-    """ Function to print squares of '#'
-    Args:
-        size(int/float) -> number of "#"'s to print
-                        -> Must be an int or a float >= 0
-    Returns nothing except if an exception occured,
-    in which case the exception raised is returned
-    """
     try:
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -21,3 +31,4 @@ def print_square(size):
                 print()
     except Exception as e:
         return (e)
+
